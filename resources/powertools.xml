@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<powerTools>
+    <tool>
+        <name>Hammer Drill</name>
+        <model>Bosch Professional GSB 13 RE</model>
+        <handly>one</handly>
+        <origin>China</origin>
+        <technical_characteristics>
+            <power_consumption unit="W">600</power_consumption>
+            <productivity unit="rpm">2800</productivity>
+            <automation>false</automation>
+        </technical_characteristics>
+    </tool>
+    <tool>
+        <name>Mixer</name>
+        <model>Forte DM 1155 VR</model>
+        <handly>one</handly>
+        <origin>China</origin>
+        <technical_characteristics>
+            <power_consumption unit="W">1100</power_consumption>
+            <productivity unit="rpm">550</productivity>
+            <automation>true</automation>
+        </technical_characteristics>
+    </tool>
+    <tool>
+        <name>Mill</name>
+        <model>Bosch POF 1200 AE</model>
+        <handly>two</handly>
+        <origin>Germany</origin>
+        <technical_characteristics>
+            <power_consumption unit="W">1200</power_consumption>
+            <productivity unit="rpm">20000</productivity>
+            <automation>true</automation>
+        </technical_characteristics>
+    </tool>
+    <tool>
+        <name>Electric spray gun</name>
+        <model>Forte SG</model>
+        <handly>one</handly>
+        <origin>Japan</origin>
+        <technical_characteristics>
+            <power_consumption unit="W">750</power_consumption>
+            <productivity unit="rpm">180</productivity>
+            <automation>false</automation>
+        </technical_characteristics>
+    </tool>
+    <tool>
+        <name>Jointer</name>
+        <model>Makita 1911B</model>
+        <handly>one</handly>
+        <origin>Japan</origin>
+        <technical_characteristics>
+            <power_consumption unit="W">900</power_consumption>
+            <productivity unit="rpm">16000</productivity>
+            <automation>false</automation>
+        </technical_characteristics>
+    </tool>
+    <tool>
+        <name>Mill</name>
+        <model>OF-1050 V</model>
+        <handly>one</handly>
+        <origin>UK</origin>
+        <technical_characteristics>
+            <power_consumption unit="W">1000</power_consumption>
+            <productivity unit="rpm">30000</productivity>
+            <automation>true</automation>
+        </technical_characteristics>
+    </tool>
+    <tool>
+        <name>Concrete mixer</name>
+        <model>INTERTOOL DT-9180</model>
+        <handly>two</handly>
+        <origin>Denmark</origin>
+        <technical_characteristics>
+            <power_consumption unit="W">550</power_consumption>
+            <productivity unit="rpm">30</productivity>
+            <automation>true</automation>
+        </technical_characteristics>
+    </tool>
+    <tool>
+        <name>Circular saw</name>
+        <model>Einhell Bavaria BCS 64/1</model>
+        <handly>two</handly>
+        <origin>China</origin>
+        <technical_characteristics>
+            <power_consumption unit="W">1200</power_consumption>
+            <productivity unit="rpm">4500</productivity>
+            <automation>false</automation>
+        </technical_characteristics>
+    </tool>
+</powerTools>
