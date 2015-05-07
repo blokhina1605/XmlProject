@@ -3,7 +3,7 @@
     <tool>
         <name>Hammer Drill</name>
         <model>Bosch Professional GSB 13 RE</model>
-        <handly>one</handly>
+        <handly>1</handly>
         <origin>China</origin>
         <technical_characteristics>
             <power_consumption unit="W">600</power_consumption>
@@ -14,7 +14,7 @@
     <tool>
         <name>Mixer</name>
         <model>Forte DM 1155 VR</model>
-        <handly>one</handly>
+        <handly>1</handly>
         <origin>China</origin>
         <technical_characteristics>
             <power_consumption unit="W">1100</power_consumption>
@@ -25,7 +25,7 @@
     <tool>
         <name>Mill</name>
         <model>Bosch POF 1200 AE</model>
-        <handly>two</handly>
+        <handly>2</handly>
         <origin>Germany</origin>
         <technical_characteristics>
             <power_consumption unit="W">1200</power_consumption>
@@ -36,7 +36,7 @@
     <tool>
         <name>Electric spray gun</name>
         <model>Forte SG</model>
-        <handly>one</handly>
+        <handly>1</handly>
         <origin>Japan</origin>
         <technical_characteristics>
             <power_consumption unit="W">750</power_consumption>
@@ -47,7 +47,7 @@
     <tool>
         <name>Jointer</name>
         <model>Makita 1911B</model>
-        <handly>one</handly>
+        <handly>1</handly>
         <origin>Japan</origin>
         <technical_characteristics>
             <power_consumption unit="W">900</power_consumption>
@@ -58,7 +58,7 @@
     <tool>
         <name>Mill</name>
         <model>OF-1050 V</model>
-        <handly>one</handly>
+        <handly>1</handly>
         <origin>UK</origin>
         <technical_characteristics>
             <power_consumption unit="W">1000</power_consumption>
@@ -69,7 +69,7 @@
     <tool>
         <name>Concrete mixer</name>
         <model>INTERTOOL DT-9180</model>
-        <handly>two</handly>
+        <handly>2</handly>
         <origin>Denmark</origin>
         <technical_characteristics>
             <power_consumption unit="W">550</power_consumption>
@@ -80,7 +80,7 @@
     <tool>
         <name>Circular saw</name>
         <model>Einhell Bavaria BCS 64/1</model>
-        <handly>two</handly>
+        <handly>2</handly>
         <origin>China</origin>
         <technical_characteristics>
             <power_consumption unit="W">1200</power_consumption>

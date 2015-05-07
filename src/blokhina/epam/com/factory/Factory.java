@@ -1,9 +1,6 @@
-package blokhina.epam.com;
+package blokhina.epam.com.factory;
 
-import blokhina.epam.com.parser.impl.PowerJDOMParser;
-import blokhina.epam.com.parser.impl.PowerDOMParser;
-import blokhina.epam.com.parser.impl.PowerSAXParser;
-import blokhina.epam.com.parser.impl.PowerStAXParser;
+import blokhina.epam.com.factory.parser.impl.*;
 
 import java.util.List;
 
@@ -13,9 +10,10 @@ import java.util.List;
 public class Factory {
 
     private static final String XML_PATH = "resources\\powertools.xml";
+    private static final String JSON_PATH = "resources\\power.json";
 
     private enum TypeParser {
-        SAX, STAX, DOM, DOM2
+        SAX, STAX, DOM, JDOM, JAXB, JSON
     }
 
     public static List<Power> createPowerBuilder(String typeParser) {
@@ -27,8 +25,12 @@ public class Factory {
                 return new PowerStAXParser().parseDocument(XML_PATH);
             case SAX:
                 return new PowerSAXParser().parseDocument(XML_PATH);
-            case DOM2:
+            case JDOM:
                 return new PowerJDOMParser().parseDocument(XML_PATH);
+            case JAXB:
+                return new PowerJAXBParser().parseDocument(XML_PATH);
+            case JSON:
+                return new PowerJSONParser().parseDocument(JSON_PATH);
             default:
                 throw new EnumConstantNotPresentException(type.getDeclaringClass(), type.name());
         }

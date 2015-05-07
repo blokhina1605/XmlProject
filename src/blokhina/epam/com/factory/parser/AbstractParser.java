@@ -1,6 +1,6 @@
-package blokhina.epam.com.parser;
+package blokhina.epam.com.factory.parser;
 
-import blokhina.epam.com.Power;
+import blokhina.epam.com.factory.Power;
 
 import java.util.ArrayList;
 import java.util.List;

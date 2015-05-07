@@ -1,4 +1,4 @@
-package blokhina.epam.com;
+package blokhina.epam.com.factory;
 
 /**
  * Created by Yevheniia_Blokhina on 5/6/2015.
@@ -7,6 +7,7 @@ public class Power {
     private String name;
     private String model;
     private String origin;
+    private int handly;
 
     private TechnicalCharacteristics tc = new TechnicalCharacteristics();
 
@@ -14,9 +15,11 @@ public class Power {
     public String toString() {
         return "\nPower{" +
                 name +
-                " " + model +
+                " " + model + " " + handly +
+                "-handed" +
                 ", origin=" + origin +
-                ", " + tc +
+                ". " + tc +
+
                 "}";
     }
 
@@ -85,6 +88,14 @@ public class Power {
 
     public String getOrigin() {
         return origin;
+    }
+
+    public int getHandly() {
+        return handly;
+    }
+
+    public void setHandly(int handly) {
+        this.handly = handly;
     }
 
     public void setOrigin(String origin) {

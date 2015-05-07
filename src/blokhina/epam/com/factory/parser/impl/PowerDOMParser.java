@@ -1,7 +1,7 @@
-package blokhina.epam.com.parser.impl;
+package blokhina.epam.com.factory.parser.impl;
 
-import blokhina.epam.com.Power;
-import blokhina.epam.com.parser.AbstractParser;
+import blokhina.epam.com.factory.Power;
+import blokhina.epam.com.factory.parser.AbstractParser;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -11,7 +11,6 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
@@ -50,6 +49,7 @@ public class PowerDOMParser extends AbstractParser {
                         temp.setName(element.getElementsByTagName("name").item(0).getChildNodes().item(0).getNodeValue());
                         temp.setModel(element.getElementsByTagName("model").item(0).getChildNodes().item(0).getNodeValue());
                         temp.setOrigin(element.getElementsByTagName("origin").item(0).getChildNodes().item(0).getNodeValue());
+                        temp.setHandly(Integer.parseInt(element.getElementsByTagName("handly").item(0).getChildNodes().item(0).getNodeValue()));
                         tc.setAutomation(Boolean.parseBoolean(element.getElementsByTagName("automation").item(0).getChildNodes().item(0).getNodeValue()));
                         tc.setPowerConsumption(Integer.parseInt(element.getElementsByTagName("power_consumption").item(0).getChildNodes().item(0).getNodeValue()));
                         tc.setProductivity(Integer.parseInt(element.getElementsByTagName("productivity").item(0).getChildNodes().item(0).getNodeValue()));
