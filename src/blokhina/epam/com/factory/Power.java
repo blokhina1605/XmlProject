@@ -1,14 +1,25 @@
 package blokhina.epam.com.factory;
 
+import javax.xml.bind.annotation.*;
+
 /**
  * Created by Yevheniia_Blokhina on 5/6/2015.
  */
+
+@XmlRootElement(name = "powerTools")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Power {
+
+    @XmlElement(name = "name")
     private String name;
+    @XmlElement(name = "model")
     private String model;
+    @XmlElement(name = "origin")
     private String origin;
+    @XmlElement(name = "handly")
     private int handly;
 
+    @XmlElement(name = "technical_characteristics")
     private TechnicalCharacteristics tc = new TechnicalCharacteristics();
 
     @Override
@@ -23,9 +34,14 @@ public class Power {
                 "}";
     }
 
+
+    @XmlAccessorType(XmlAccessType.FIELD)
     public class TechnicalCharacteristics {
+        @XmlElement(name = "power_consumption")
         private int powerConsumption;
+        @XmlElement(name = "productivity")
         private int productivity;
+        @XmlElement(name = "automation")
         private boolean automation;
 
         @Override

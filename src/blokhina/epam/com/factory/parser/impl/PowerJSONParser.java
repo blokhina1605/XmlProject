@@ -31,19 +31,19 @@ public class PowerJSONParser extends AbstractParser {
             Power.TechnicalCharacteristics tc;
             for (int i = 0; i < jsonArray.size(); i++) {
                 jo = (JSONObject) jsonArray.get(i);
+                JSONObject innerjo = (JSONObject) jo.get("technical_characteristics");
                 power = new Power();
                 tc = power.new TechnicalCharacteristics();
                 power.setName(jo.get("name").toString());
                 power.setModel(jo.get("model").toString());
                 power.setOrigin(jo.get("origin").toString());
                 power.setHandly(Integer.parseInt(jo.get("handly").toString()));
-                tc.setProductivity(Integer.parseInt(jo.get("productivity").toString()));
-                tc.setPowerConsumption(Integer.parseInt(jo.get("power_consumption").toString()));
-                tc.setAutomation(Boolean.parseBoolean(jo.get("automation").toString()));
+                tc.setProductivity(Integer.parseInt(innerjo.get("productivity").toString()));
+                tc.setPowerConsumption(Integer.parseInt(innerjo.get("power_consumption").toString()));
+                tc.setAutomation(Boolean.parseBoolean(innerjo.get("automation").toString()));
                 power.setTc(tc);
                 powerTools.add(power);
             }
-            System.out.println(powerTools);
             return powerTools;
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
