@@ -25,7 +25,6 @@ public class PowerJSONParser extends AbstractParser {
             JSONObject jo;
             Power power;
             Power.TechnicalCharacteristics tc;
-            System.out.println(jsonArray.size());
             for (int i = 0; i < jsonArray.size(); i++) {
                 jo = (JSONObject) jsonArray.get(i);
                 JSONObject innerjo = (JSONObject) jo.get("technical_characteristics");
