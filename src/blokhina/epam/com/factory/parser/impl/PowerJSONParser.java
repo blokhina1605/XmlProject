@@ -10,16 +10,12 @@ import org.json.simple.parser.ParseException;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Iterator;
 import java.util.List;
 
 /**
  * Created by Yevheniia_Blokhina on 5/7/2015.
  */
 public class PowerJSONParser extends AbstractParser {
-
-    private static final String JSON_PATH = "resources\\power.json";
-
 
     public List<Power> parseDocument(String jsonPath) {
         try {
@@ -29,6 +25,7 @@ public class PowerJSONParser extends AbstractParser {
             JSONObject jo;
             Power power;
             Power.TechnicalCharacteristics tc;
+            System.out.println(jsonArray.size());
             for (int i = 0; i < jsonArray.size(); i++) {
                 jo = (JSONObject) jsonArray.get(i);
                 JSONObject innerjo = (JSONObject) jo.get("technical_characteristics");

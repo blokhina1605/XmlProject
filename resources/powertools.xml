@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <powerTools>
     <tool>
         <name>Hammer Drill</name>
@@ -6,8 +6,8 @@
         <handly>1</handly>
         <origin>China</origin>
         <technical_characteristics>
-            <power_consumption unit="W">600</power_consumption>
-            <productivity unit="rpm">2800</productivity>
+            <power_consumption>600</power_consumption>
+            <productivity>2800</productivity>
             <automation>false</automation>
         </technical_characteristics>
     </tool>
@@ -17,8 +17,8 @@
         <handly>1</handly>
         <origin>China</origin>
         <technical_characteristics>
-            <power_consumption unit="W">1100</power_consumption>
-            <productivity unit="rpm">550</productivity>
+            <power_consumption>1100</power_consumption>
+            <productivity>550</productivity>
             <automation>true</automation>
         </technical_characteristics>
     </tool>
@@ -28,8 +28,8 @@
         <handly>2</handly>
         <origin>Germany</origin>
         <technical_characteristics>
-            <power_consumption unit="W">1200</power_consumption>
-            <productivity unit="rpm">20000</productivity>
+            <power_consumption>1200</power_consumption>
+            <productivity>20000</productivity>
             <automation>true</automation>
         </technical_characteristics>
     </tool>
@@ -39,8 +39,8 @@
         <handly>1</handly>
         <origin>Japan</origin>
         <technical_characteristics>
-            <power_consumption unit="W">750</power_consumption>
-            <productivity unit="rpm">180</productivity>
+            <power_consumption>750</power_consumption>
+            <productivity>180</productivity>
             <automation>false</automation>
         </technical_characteristics>
     </tool>
@@ -50,8 +50,8 @@
         <handly>1</handly>
         <origin>Japan</origin>
         <technical_characteristics>
-            <power_consumption unit="W">900</power_consumption>
-            <productivity unit="rpm">16000</productivity>
+            <power_consumption>900</power_consumption>
+            <productivity>16000</productivity>
             <automation>false</automation>
         </technical_characteristics>
     </tool>
@@ -61,8 +61,8 @@
         <handly>1</handly>
         <origin>UK</origin>
         <technical_characteristics>
-            <power_consumption unit="W">1000</power_consumption>
-            <productivity unit="rpm">30000</productivity>
+            <power_consumption>1000</power_consumption>
+            <productivity>30000</productivity>
             <automation>true</automation>
         </technical_characteristics>
     </tool>
@@ -72,8 +72,8 @@
         <handly>2</handly>
         <origin>Denmark</origin>
         <technical_characteristics>
-            <power_consumption unit="W">550</power_consumption>
-            <productivity unit="rpm">30</productivity>
+            <power_consumption>550</power_consumption>
+            <productivity>30</productivity>
             <automation>true</automation>
         </technical_characteristics>
     </tool>
@@ -83,8 +83,8 @@
         <handly>2</handly>
         <origin>China</origin>
         <technical_characteristics>
-            <power_consumption unit="W">1200</power_consumption>
-            <productivity unit="rpm">4500</productivity>
+            <power_consumption>1200</power_consumption>
+            <productivity>4500</productivity>
             <automation>false</automation>
         </technical_characteristics>
     </tool>

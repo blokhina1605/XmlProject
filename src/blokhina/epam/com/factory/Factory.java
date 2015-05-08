@@ -16,7 +16,11 @@ public class Factory {
         SAX, STAX, DOM, JDOM, JAXB, JSON
     }
 
-    public static List<Power> createPowerBuilder(String typeParser) {
+    public static List createPowerJAXBParser() {
+        return new PowerJAXBParser().parseDocument(XML_PATH);
+    }
+
+    public static List<Power> createPowerParser(String typeParser) {
         TypeParser type = TypeParser.valueOf(typeParser.toUpperCase());
         switch (type) {
             case DOM:
@@ -27,8 +31,6 @@ public class Factory {
                 return new PowerSAXParser().parseDocument(XML_PATH);
             case JDOM:
                 return new PowerJDOMParser().parseDocument(XML_PATH);
-            case JAXB:
-                return new PowerJAXBParser().parseDocument(XML_PATH);
             case JSON:
                 return new PowerJSONParser().parseDocument(JSON_PATH);
             default:

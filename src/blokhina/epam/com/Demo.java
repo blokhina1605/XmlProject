@@ -13,13 +13,16 @@ import java.util.List;
 public class Demo {
     public static void main(String[] args) {
         //change option (JSON, DOM, JDOM, SAX, STAX)
-        List<Power> listPower = Factory.createPowerBuilder("JSON");
+        List<Power> listPower = Factory.createPowerParser("SAX");
+
+        List listP = Factory.createPowerJAXBParser();
 
         //JSON builder
         PowerJSONBuilder.buildJsonPower(listPower);
 
         //print list of obj
-        System.out.println(listPower);
+//        System.out.println(listPower);
+//        System.out.println(listP);
 
     }
 }

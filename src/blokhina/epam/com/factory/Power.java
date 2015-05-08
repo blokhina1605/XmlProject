@@ -34,7 +34,7 @@ public class Power {
                 "}";
     }
 
-
+    @XmlRootElement(name = "technical_characteristics")
     @XmlAccessorType(XmlAccessType.FIELD)
     public class TechnicalCharacteristics {
         @XmlElement(name = "power_consumption")
